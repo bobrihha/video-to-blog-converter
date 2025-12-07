@@ -82,9 +82,9 @@ async def handle_video_link(message: types.Message):
         loop = asyncio.get_event_loop()
         result = await loop.run_in_executor(None, process_video, url, tone)
         
-        # Send Markdown file
-        md_file = FSInputFile(result["markdown_path"])
-        await message.answer_document(md_file, caption=f"📄 Статья (Markdown)\nID: `{result['video_id']}`")
+        # Send Markdown file - DISABLED
+        # md_file = FSInputFile(result["markdown_path"])
+        # await message.answer_document(md_file, caption=f"📄 Статья (Markdown)\nID: `{result['video_id']}`")
         
         # Send HTML file
         html_file = FSInputFile(result["html_path"])
