@@ -1,0 +1,5 @@
+youtube-transcript-api
+google-generativeai
+python-dotenv
+aiogram==3.13.1
+markdown
