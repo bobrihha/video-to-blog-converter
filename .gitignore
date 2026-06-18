@@ -4,3 +4,15 @@ __pycache__/
 output/
 .venv/
 .DS_Store
+.env.*
+*.key
+*.pem
+*credentials*.json
+service_account.json
+secret.key
+*.db
+*.sqlite
+*.sqlite3
+venv/
+node_modules/
+*.log
